@@ -1,3 +1,4 @@
+from unicodedata import category
 from shopping_cart import ShoppingCart
 
 
@@ -11,5 +12,5 @@ class Customer:
         self.customer_cart.add_product(product)
 
     def view_all_product(self):
-        for att in range(len(self.customer_cart.shopping_cart)):
-            print(self.customer_cart.shopping_cart[att])
+       for item in self.customer_cart.shopping_cart:
+           print(item.products_name)

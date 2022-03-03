@@ -16,4 +16,7 @@ customer_one.add_to_customers_cart(mre)
 customer_one.add_to_customers_cart(tv)
 
 customer_one.view_all_product()
-print(customer_one.customer_cart.total_price())
+customer_one.customer_cart.add_total_price()
+
+customer_one.customer_cart.empty_cart()
+print(customer_one.customer_cart.empty_cart())
