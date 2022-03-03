@@ -12,5 +12,8 @@ Gum = Product("Gum", .99, "snack")
 print(customer_one.customer_name)
 
 customer_one.add_to_customers_cart(banana)
+customer_one.add_to_customers_cart(mre)
+customer_one.add_to_customers_cart(tv)
 
-print(customer_one.customer_cart)
+customer_one.view_all_product()
+print(customer_one.customer_cart.total_price())

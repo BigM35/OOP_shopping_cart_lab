@@ -10,8 +10,9 @@ class ShoppingCart:
         self.shopping_cart.append(product)
 
     def total_price(self):
+        price = 0
         for items in range(len(self.shopping_cart)):
-            price += self.product_in_cart.product_price[items]
+            price += self.shopping_cart[items].product_price()
         return price
 
     def empty_cart(self):
